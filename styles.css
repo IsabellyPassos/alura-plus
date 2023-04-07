@@ -1,0 +1,166 @@
+:root {
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo:#00030C;
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.principal {
+    background-image: url(img/background.png); /*utilizado quando é apenas uma imagem representativa (sem sentido para o usuario*/
+    background-repeat: no-repeat; /*nao repete a imagem*/
+    background-size: contain; /*a imagem do background ocupa todo o espaco destinado a ela*/
+    align-items: center; /*alinha ao centro da coluna*/
+    text-align: center; /*alinha tudo que esta dentro de um elemento de bloco*/
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario-imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto {
+    color: var(--cinza-secundario);
+    font-size: 1rem;
+}
+
+.secundario-botao {
+    display: inline-block; /*transforma o elemento em linha e faz a quebra de linha*/
+    margin-top: 1em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.dispositivos-lista {
+    display: flex; /* faz todos os items ficarem um do lado do outro em linha */
+    justify-content: center;
+    margin: 5em 0;
+    list-style: none;
+}
+
+.dispositivos {
+    text-align: center; /*pega os elementos inline e centraliza */
+}
+
+
+.dispositivos-titulo {
+    font-size: 2.5em;
+    color: var(--branco-principal);
+}
+
+.lista-itens {
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    padding: 4em;
+}
+
+.rodape-div {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.rodape-imagem {
+    margin-bottom: 20px;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em;
+    list-style: none;
+}
+
+.lista-link {
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+.botao-lista {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape-texto {
+    margin-bottom: 1em;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.botao-lista:hover {
+    color: var(--botao-azul);
+}
+
+.botao-lista:active { /*quando clica no botao */
+    color: purple;
+}
