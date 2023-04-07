@@ -1,2 +1,2 @@
 # alura-plus
-Projeto feio através no curso HTML e CSS.
+Projeto feio através do curso HTML e CSS da plataforma Alura.
